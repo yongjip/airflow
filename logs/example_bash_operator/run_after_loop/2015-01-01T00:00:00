@@ -1,0 +1,22 @@
+[2017-04-09 12:19:51,441] {models.py:167} INFO - Filling up the DagBag from /home/ykim/airflow/dags/example_dags/example_bash_operator.py
+[2017-04-09 12:19:51,972] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run example_bash_operator run_after_loop 2015-01-01T00:00:00 --job_id 11 --raw -sd DAGS_FOLDER/example_dags/example_bash_operator.py']
+[2017-04-09 12:19:52,746] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:52,745] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2017-04-09 12:19:53,244] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,244] {models.py:167} INFO - Filling up the DagBag from /home/ykim/airflow/dags/example_dags/example_bash_operator.py
+[2017-04-09 12:19:53,745] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,745] {models.py:1126} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_after_loop 2015-01-01 00:00:00 [queued]>
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,750] {models.py:1126} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_after_loop 2015-01-01 00:00:00 [queued]>
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,750] {models.py:1318} INFO - 
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 1
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2017-04-09 12:19:53,750] {base_task_runner.py:95} INFO - Subtask: 
+[2017-04-09 12:19:53,775] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,775] {models.py:1342} INFO - Executing <Task(BashOperator): run_after_loop> on 2015-01-01 00:00:00
+[2017-04-09 12:19:53,787] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,786] {bash_operator.py:71} INFO - tmp dir root location: 
+[2017-04-09 12:19:53,787] {base_task_runner.py:95} INFO - Subtask: /tmp
+[2017-04-09 12:19:53,787] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,787] {bash_operator.py:80} INFO - Temporary script location :/tmp/airflowtmpw2glfmq8//tmp/airflowtmpw2glfmq8/run_after_loop2b3b_ckp
+[2017-04-09 12:19:53,787] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,787] {bash_operator.py:81} INFO - Running command: echo 1
+[2017-04-09 12:19:53,808] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,808] {bash_operator.py:90} INFO - Output:
+[2017-04-09 12:19:53,810] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,810] {bash_operator.py:94} INFO - 1
+[2017-04-09 12:19:53,811] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:19:53,811] {bash_operator.py:97} INFO - Command exited with return code 0
+[2017-04-09 12:19:53,839] {base_task_runner.py:95} INFO - Subtask: /home/ykim/anaconda3/lib/python3.5/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: PendingDeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2017-04-09 12:19:53,839] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2017-04-09 12:19:56,988] {jobs.py:2083} INFO - Task exited with return code 0

@@ -1,0 +1,15 @@
+[2017-04-09 12:20:12,589] {models.py:167} INFO - Filling up the DagBag from /home/ykim/airflow/dags/example_dags/example_bash_operator.py
+[2017-04-09 12:20:13,120] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run example_bash_operator run_this_last 2015-01-01T00:00:00 --job_id 14 --raw -sd DAGS_FOLDER/example_dags/example_bash_operator.py']
+[2017-04-09 12:20:13,906] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:13,906] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2017-04-09 12:20:14,468] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:14,468] {models.py:167} INFO - Filling up the DagBag from /home/ykim/airflow/dags/example_dags/example_bash_operator.py
+[2017-04-09 12:20:14,982] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:14,982] {models.py:1126} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_this_last 2015-01-01 00:00:00 [queued]>
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:14,986] {models.py:1126} INFO - Dependencies all met for <TaskInstance: example_bash_operator.run_this_last 2015-01-01 00:00:00 [queued]>
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:14,987] {models.py:1318} INFO - 
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: Starting attempt 1 of 1
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: --------------------------------------------------------------------------------
+[2017-04-09 12:20:14,987] {base_task_runner.py:95} INFO - Subtask: 
+[2017-04-09 12:20:15,008] {base_task_runner.py:95} INFO - Subtask: [2017-04-09 12:20:15,007] {models.py:1342} INFO - Executing <Task(DummyOperator): run_this_last> on 2015-01-01 00:00:00
+[2017-04-09 12:20:15,033] {base_task_runner.py:95} INFO - Subtask: /home/ykim/anaconda3/lib/python3.5/site-packages/airflow/ti_deps/deps/base_ti_dep.py:94: PendingDeprecationWarning: generator '_get_dep_statuses' raised StopIteration
+[2017-04-09 12:20:15,034] {base_task_runner.py:95} INFO - Subtask:   for dep_status in self._get_dep_statuses(ti, session, dep_context):
+[2017-04-09 12:20:18,123] {jobs.py:2083} INFO - Task exited with return code 0
